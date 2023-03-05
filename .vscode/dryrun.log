@@ -1,5 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/josaenz/Projects/go/bank'
-sudo docker run --name postgres15 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:15rc1-alpine
-make: Leaving directory '/home/josaenz/Projects/go/bank'
- 
