@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	util "github.com/josephsae/bank/util"
+	utils "github.com/josephsae/bank/utils"
 	"github.com/stretchr/testify/require"
 )
 
@@ -13,7 +13,7 @@ func createRandomTransfer(t *testing.T, collectorAccount, PayerAccount Account) 
 	arg := CreateTransferParams{
 		FromAccountID: PayerAccount.ID,
 		ToAccountID:   collectorAccount.ID,
-		Amount:        util.RandomMoney(),
+		Amount:        utils.RandomMoney(),
 	}
 
 	transfer, err := testQueries.CreateTransfer(context.Background(), arg)
